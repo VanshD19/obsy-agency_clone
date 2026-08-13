@@ -1,0 +1,229 @@
+/*
+styling sheet
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: white;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* loader being build */
+#loader{
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding: 20vh 10vw;
+}
+
+/* class of three lines in the loader page */
+.line{
+    display: flex;
+    gap: 1.5vw;
+    overflow: hidden;
+}
+
+/* all the h1 tags used in loader */
+.line h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+/* part 1 of line 1 which is a counter in loader */
+#part1_counter{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    gap: 0.6vw;
+}
+
+/* an h5 tag used for counting form 00 to 100 */
+#counter{
+    text-align: right;
+    width: 5vw;
+}
+
+/* an animation created for blinking of 'NOW' */
+@keyframes blinking_now {
+    0%{
+        font-style: normal;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    
+    48%{
+        font-style: normal;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+
+    50%{
+        font-style: italic;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+
+    100%{
+        font-style: italic;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+/* an h1 tag which has 'NOW' written in it used for an animation of blinking in the loader */
+#now{
+    animation-name: blinking_now;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* this is wait message showing in loader in the bottom area */
+#wait_message{
+    position: relative;
+    left: 20vw;
+    top: 7vh;
+    font-weight: 100;
+    width: fit-content;
+}
+
+/* a tag containing all the pages */
+#main{
+    position: relative;
+    background-color: rgb(30, 29, 29);
+}
+
+
+
+/*
+page 1 after the loader 
+*/
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30, 29, 29);
+}
+
+/* navbar of the page 1 */
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+}
+
+/* left side of the navbar containing logo and menu icon */
+#left_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
+
+/* right side of the navbar */
+#right_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 19vw;
+}
+
+/* container of the lines in page 1 */
+#page1 #container{
+    position: relative;
+    top: 10vh;
+    left: 29vw;
+}
+
+/* numbered- 01 on page 1 */
+#page_1_number{
+    position: absolute;
+    top: 23vh;
+    left: 23vw;
+    font-size: 2.6vw;
+}
+
+/* line 3 of page 1 got flex to make them come in one line */
+#page1 #container #line3{
+    display: flex;
+}
+
+/* 'WEB' and 'GRAPHIC' makes them underline */
+.page_1_hover{
+    text-decoration: underline;
+}
+
+/* elements of tag h1 that will animate in the begining of the page */
+.page_1_h1 h1{
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+
+
+/* 
+page 2 after page 1 
+*/
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30, 29, 29);
+}
+
+#video_container{
+    position: relative;
+    background-color: red;
+    width: 80vw;
+    height: 80vh;
+    top: 1%;
+    left: 29vw;
+}
+
+#page2_circle{
+    position: absolute;
+    background-color: orange;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+#page2_circle img{
+    z-index: 999;
+    background-color: white;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* page 3 after page 2 */
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(79, 198, 58);
+}
+
+/* page 4 after page 3 */
+#page4{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(169, 222, 35);
+}
