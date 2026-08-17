@@ -19,5 +19,31 @@ var counter = document.querySelector("#counter");
 var page_1_lines = document.querySelectorAll(".page_1_h1");
 var page_1_hover = document.querySelectorAll(".page_1_hover");
 
+// cursor for the website
+const cursor = document.querySelector("#cursor");
+
+// container of video and img on page 2
+const page_2_container = document.querySelector("#video_container");
+
+// circle cursor on page 2 video and img
+const circle_cursor = document.querySelector("#page2_circle");
+
+// used to store the left and top position of circle cursor on the page 2 to be used when being repositioned again
+const initialLeft = circle_cursor.offsetLeft;
+const initialTop = circle_cursor.offsetTop;
+
+// variable used to help identify weather the cursor is in video container or not
+let in_video_container = false;
+
+// flag for making the video play and pause
+let is_playing = false;
+
+// img inside the page 2 
+let img_page_2 = document.querySelector("#video_container>img");
+
+// video inside the page 2
+let video_page_2 = document.querySelector("#video_container>video");
+
+
 
 

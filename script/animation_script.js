@@ -34,6 +34,7 @@ timeline_1.from("#part1_counter",{
             tl.to("#loader",{
                 onStart: ()=>{
                     timeline_2.play();
+                    cursor.style.display = "block";
                 },
                 y:-2000,
                 duration:4.1,
@@ -66,7 +67,11 @@ timeline_2.from(page_1_lines,{
     }
 });
 
-
+// animate the video and img in page 2
+timeline_2.from("#video_container",{
+    opacity:0,
+    duration:1.2,
+},"<");
 
 
 
