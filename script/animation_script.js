@@ -74,6 +74,29 @@ timeline_2.from("#video_container",{
 },"<");
 
 
+gsap.from("#page_3_heading h1",{
+    opacity: 0,
+    y:100,
+    scrollTrigger: {
+        trigger: "#page_3_heading h1",
+        scroller: "#main",
+        // markers: true,
+        start: "top 99%",
+        end : "top 75%",
+        scrub: 5,
+    }
+});
 
+gsap.from("#page3 #line",{
+    scaleX: 0,
+    scrollTrigger: {
+        trigger: "#page3 #line",
+        scroller: "#main",
+        // markers: true,
+        start: "top 99%",
+        end : "top 75%",
+        scrub: 5,
+    }
 
+});
 

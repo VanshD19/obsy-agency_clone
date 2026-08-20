@@ -13,7 +13,7 @@
     <!-- locomotive css -->
      <link rel="stylesheet" href="./Libs/locomotive-scroll.min.css">
 
-     <!-- Shery JS -->
+     <!-- Shery CSS -->
     <link rel="stylesheet" href="./Libs/Shery.css">
 
     <!-- style sheet or css  -->
@@ -57,14 +57,15 @@
     <div id="cursor"></div>
 
     <div id="main">
-
+        
         <!-- page 1 -->
         <div data-scroll data-scroll-speed="4" id="page1" class="page">
-
+            
             <!-- navbar -->
             <div id="nav">
+                
                 <div id="left_nav">
-
+        
                     <div id="menu_image" class="magnet">
                         <svg class="menu-opener__square menu max-lg:hidden" width="12" height="12" viewBox="0 0 12 12" fill="none" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
                             <rect y="10" width="2" height="2" fill="currentColor"></rect>
@@ -93,7 +94,7 @@
                             <path d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z" fill="currentColor"></path>
                         </svg>
                     </div>
-
+        
                 </div>
 
                 <div id="right_nav">
@@ -140,6 +141,8 @@
 
         </div>
 
+
+
         <!-- page 2 containing the video -->
         <div id="page2" class="page">
 
@@ -159,7 +162,25 @@
                 <video src="./Assets/page2_video.mp4"></video>
             </div>
         </div>
-        <div id="page3" class="page"></div>
+
+
+
+        <div id="page3" class="page">
+            <div id="page_3_number">
+                <h4><i>02</i></h4>
+            </div>
+
+            <div id="page_3_heading">
+                <h1>OUR PROJECTS</h1>
+            </div>
+
+            <div id="line"></div>
+
+        </div>
+
+
+
+
         <div id="page4" class="page"></div>
     </div>
 
@@ -167,7 +188,7 @@
     <!-- three JS -->
     <script src="./Libs/three.min.js"></script>
 
-    <!-- controlkit JS -->
+    <!-- controlkit JS offline -->
      <script src="./Libs/controlKit.min.js"></script>
 
     <!-- gsap offline  -->
@@ -177,11 +198,12 @@
     <!-- locomotive offline -->
     <script src="./Libs/locomotive-scroll.min.js"></script>
 
-    <!-- Shery JS -->
+    <!-- Shery JS offline -->
     <script src="./Libs/Shery.js"></script>
 
     <!-- js scripts -->
     <script src="./script/vairiable.js"></script>
+    <script src="./script/locomotive_scrolltrigger_combine.js"></script>
     <script src="./script/animation_script.js"></script>
     <script src="./script/script.js"></script>
 </body>

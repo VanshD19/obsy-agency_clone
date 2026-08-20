@@ -2,11 +2,6 @@
 function script
 */
 
-// use for making scrolling smoother used when locomotive is used
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-});
 
 // making the circular cursor on the website move with mouse and making it move smoother
 window.addEventListener("mousemove", (e)=>{
