@@ -312,8 +312,33 @@ page 3 after page 2
     transform-origin: right;
 }
 
+#page3 #image-container-div{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 7vw 1vw;
+    position: relative;
+}
 
+#page3 #image-container-div .image_div{
+    /* background-color: blue; */
+    height: 33vw;
+    width: 24vw;
+    position: relative;
+    overflow: hidden;
+}
 
+#page3 #image-container-div .image_div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.img_down{
+    display: none;
+}
 
 
 
@@ -324,4 +349,14 @@ page 3 after page 2
     width: 100%;
     height: 200vh;
     background-color: rgb(169, 222, 35);
+}
+
+
+
+
+
+
+._canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
 }

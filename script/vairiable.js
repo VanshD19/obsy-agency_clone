@@ -44,6 +44,7 @@ let img_page_2 = document.querySelector("#video_container>img");
 // video inside the page 2
 let video_page_2 = document.querySelector("#video_container>video");
 
-
+// conatiner of images on page-3 for gooey effect
+let gooey_container = document.querySelectorAll("#page3 #image-container-div .image_div");
 
 
